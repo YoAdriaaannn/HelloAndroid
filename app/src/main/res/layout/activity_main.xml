@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.adrianraff.helloandroid.MainActivity">
+
+    <TextView
+        android:id="@+id/name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Udacity"
+         />
+
+    <TextView
+        android:id="@+id/address_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2465 Latham St"
+         />
+
+    <TextView
+        android:id="@+id/state_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mountain View, CA 94043"
+        />
+
+    <TextView
+        android:id="@+id/phone_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(650)555-5555"
+        />
+
+</RelativeLayout>
