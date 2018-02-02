@@ -4,12 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context="com.adrianraff.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/udacity_logo_view"
+        android:layout_width="500px"
+        android:layout_height="96px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/udacity_logo" />
+
+    <ImageView
+        android:id="@+id/udacity_degree_view"
+        android:layout_width="600px"
+        android:layout_height="600px"
+        android:layout_centerInParent="true"
+        android:src="@drawable/udacity_degree" />
+
+    <ImageView
+        android:id="@+id/qr_view"
+        android:layout_width="350px"
+        android:layout_height="350px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/qr_code"
+        />
+
+    <TextView
+        android:id="@+id/tagline_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/udacity_logo_view"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:text="Invest in Your Future!"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_blue_light"
+        />
 
     <TextView
         android:id="@+id/name_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@id/qr_view"
+        android:layout_toRightOf="@id/qr_view"
+        android:layout_toEndOf="@id/qr_view"
+        android:padding="5dp"
         android:text="Udacity"
          />
 
@@ -17,21 +59,32 @@
         android:id="@+id/address_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2465 Latham St"
-         />
+        android:layout_toEndOf="@+id/qr_view"
+        android:layout_toRightOf="@+id/qr_view"
+        android:layout_below="@id/name_view"
+        android:padding="5dp"
+        android:text="2465 Latham St" />
 
     <TextView
         android:id="@+id/state_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mountain View, CA 94043"
+        android:layout_toRightOf="@id/qr_view"
+        android:layout_below="@id/address_view"
+        android:padding="5dp"
         />
 
     <TextView
         android:id="@+id/phone_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/qr_view"
+        android:layout_below="@id/state_view"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
         android:text="(650)555-5555"
+        android:linksClickable="true"
         />
 
 </RelativeLayout>
