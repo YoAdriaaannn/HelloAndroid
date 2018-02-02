@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("https://youtu.be/5gLp8T4Cev0"));
+                intent.setData(Uri.parse("https://www.youtube.com/watch?v=JTTpkEqCico`"));
                 startActivity(intent);
             }
         });
